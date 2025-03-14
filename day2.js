@@ -1,25 +1,21 @@
-```develop a program simulating one of these sites. It should ask the user to answer 3 questions:
+//here 3 variables are declared that receive the name, age and language of study that the user informs
+let name = prompt('Qual o seu nome?');
+let age = prompt('Quantos anos você tem?');
+let language = prompt('Qual linguagem de programação você está estudando?');
 
-- What's your name?
--How old are you?
-- What programming language are you studying?
+//after filling in the values of the variables, a message will appear welcoming the user according to the information he filled in
+alert(`Olá ${name}, você tem ${age} anos e já está aprendendo ${language}!`);
 
-As the questions are asked, the person using the program must answer each one.
+//the program will show the user a question about whether he likes to study the language he has entered
+let reply = prompt(`Você gosta de estudar ${language}? Responda com o número 1 para SIM ou 2 para NÃO.`);
 
-At the end, the system will display the message:```
-
-"Hello [name], you are [age] old and already learning [language]!"
-
-
-alert('Seja bem vindo ao Simulador de Estudo')
-let name;
-let age;
-let language;
-
-name = prompt('Qual seu nome?');
-age = prompt('Quantos anos você tem?');
-language = prompt('Qual linguagem de programação você está estudando?');
-
-alert(`Olá ${name}, você tem ${age} anos e já está aprendendo ${language}!`)
+if (reply == 1){
+// give positive answer
+console.log(' > Muito bom! Continue estudando e você terá muito sucesso.');
+}
+if (reply == 2){
+// give the negative answer
+console.log('> Ahh que pena... Já tentou aprender outras linguagens?');
+}
 
 
